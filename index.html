@@ -15,26 +15,26 @@
   </head>
   <body>
     <!-- header -->
-    <header class="line">
-      <div class="container header-top">
-        <a class="logo" href="#"><span class="logo-blue">Web</span>Studio</a>
-        <nav>
-          <ul class="site-nav list">
-            <li class="site-nav-link page">
-              <a class="link" href="index.html">Студия</a>
+    <header class="page-header">
+      <div class="container container__row ">
+        <a class="logo" href="#"><span class="logo__color">Web</span>Studio</a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item-active">
+              <a class="nav__link " href="index.html">Студия</a>
             </li>
-            <li class="site-nav-link">
-              <a class="link" href="portfolio.html">Портфолио</a>
+            <li class="nav__item">
+              <a class="nav__link" href="portfolio.html">Портфолио</a>
             </li>
-            <li class="site-nav-link">
-              <a class="link" href="#">Контакты</a>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="site-info list">
-          <li class="site-info-contact">
-            <a class="site-info-header" href="mailto:info@devstudio.com">
-              <svg class="site-info-icon" width="16px" height="12px">
+        <ul class="info">
+          <li class="info__item">
+            <a class="info__link" href="mailto:info@devstudio.com">
+              <svg class="info__icon" width="16px" height="12px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-envelope"
                 ></use>
@@ -42,9 +42,9 @@
               info@devstudio.com</a
             >
           </li>
-          <li class="site-info-contact">
-            <a class="site-info-header" href="tel:+38-096-111-11-11">
-              <svg class="site-info-icon" width="10px" height="16px">
+          <li class="info__item">
+            <a class="info__link" href="tel:+38-096-111-11-11">
+              <svg class="info__icon" width="10px" height="16px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-smartphone"
                 ></use>
@@ -58,23 +58,23 @@
     <!-- main -->
     <main>
       <!-- hero  -->
-      <section class="section heroes">
-        <h1 class="heroes-title">
+      <section class="hero">
+        <h1 class="hero__title">
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="heroes-button" data-modal-open type="button">
+        <button class="button" data-modal-open type="button">
           Заказать услугу
         </button>
       </section>
       <!-- features -->
-      <section class="section">
-        <div class="container">
-          <h2 class="hidden">Особенности</h2>
-          <ul class="text-set list">
-            <li class="text-set-card">
-              <div class="icon-thumb">
-                <svg class="text-set-icon" width="70px" height="70px">
+      <section class="container">
+        <div class="features">
+          <h2 class="is-hidden">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__list">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70px" height="70px">
                   <use
                     xlink:href="./images/svg/symbol-defs-good.svg#icon-antenna-1"
                   ></use>
@@ -86,44 +86,44 @@
                 формированию позиции.
               </p>
             </li>
-            <li class="text-set-card">
-              <div class="icon-thumb">
-                <svg class="text-set-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70px" height="70px">
                   <use
                     xlink:href="./images/svg/symbol-defs-good.svg#icon-clock-1"
                   ></use>
                 </svg>
               </div>
-              <h3 class="section-title">Пунктуальность</h3>
-              <p class="text">
+              <h3 class="features__title">Пунктуальность</h3>
+              <p class="features__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="text-set-card">
-              <div class="icon-thumb">
-                <svg class="text-set-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70px" height="70px">
                   <use
                     xlink:href="./images/svg/symbol-defs-good.svg#icon-diagram-1"
                   ></use>
                 </svg>
               </div>
-              <h3 class="section-title">Планирование</h3>
-              <p class="text">
+              <h3 class="features__title">Планирование</h3>
+              <p class="features__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="text-set-card">
-              <div class="icon-thumb">
-                <svg class="text-set-icon" width="70px" height="70px">
+            <li class="features__list">
+              <div class="features__thumb">
+                <svg class="features__icon" width="70px" height="70px">
                   <use
                     xlink:href="./images/svg/symbol-defs-good.svg#icon-astronaut-1"
                   ></use>
                 </svg>
               </div>
-              <h3 class="section-title">Современные технологии</h3>
-              <p class="text">
+              <h3 class="features__title">Современные технологии</h3>
+              <p class="features__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -132,62 +132,58 @@
         </div>
       </section>
       <!-- what we do -->
-      <section class="section without-padding">
-        <div class="container">
-          <h2 class="section-title subtitle">Чем мы занимаемся</h2>
-          <ul class="pic-list list">
-            <li class="pic-list-icon">
+      <section class="container">
+        <div class="work">
+          <h2 class="work__title">Чем мы занимаемся</h2>
+          <ul class="work__list">
+            <li class="work__item">
               <a href="#">
                 <img
                   src="./images/what-we-do-pic.1.jpg"
                   width="370"
                   alt="компьютер за которим работают"
                 />
-                <p class="pic-list-text">Десктопные приложения</p>
+                <p class="work__text">Десктопные приложения</p>
               </a>
             </li>
-            <li class="pic-list-icon">
+            <li class="work__item">
               <a href="#">
                 <img
                   src="./images/what-we-do-pic.2.jpg"
                   width="370"
                   alt="телефон на фоне компьютера"
                 />
-                <p class="pic-list-text">Мобильные приложения</p>
+                <p class="work__text">Мобильные приложения</p>
               </a>
             </li>
-            <li class="pic-list-icon">
+            <li class="work__item">
               <a href="#">
                 <img
                   src="./images/what-we-do-pic.3.jpg"
                   width="370"
                   alt="вибор цвета"
                 />
-                <p class="pic-list-text">Дизайнерские решения</p>
+                <p class="work__text">Дизайнерские решения</p>
               </a>
             </li>
           </ul>
         </div>
       </section>
       <!-- our team -->
-      <section class="section background-color">
-        <div class="container">
-          <h2 class="section-title subtitle have-padding">Наша команда</h2>
-          <ul class="team list">
-            <li class="team-specialist">
-              <a class="card-specialist link" href="#">
-                <div class="card-thumb-specialist">
+      <section class="container">
+        <div class="team">
+          <h2 class="team__tittle">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="specialist">
+                <a class="specialist__link" href="#">
                   <img
                     src="./images/founders/founder-1.jpg"
                     width="270"
-                    alt="фото Игорь Демьяненко"
-                  />
-                </div>
-                <div class="card-text-specialist">
-                  <h3 class="headline">Игорь Демьяненко</h3>
-                  <p class="text">Product Designer</p>
-                </div>
-              </a>
+                    alt="фото Игорь Демьяненко" />
+                  <h3 class="specialist__title">Игорь Демьяненко</h3>
+                  <p class="specialist__text">Product Designer</p>
+                </a>
               <ul class="social-specialist list">
                 <li class="social-specialist-item">
                   <a class="social-thumb" href="#">
@@ -227,6 +223,7 @@
                 </li>
               </ul>
             </li>
+            
             <li class="team-specialist">
               <a class="card-specialist link" href="#">
                 <div class="card-thumb-specialist">
@@ -387,10 +384,12 @@
               </ul>
             </li>
           </ul>
+              </div>
+
         </div>
       </section>
       <!-- client section -->
-      <section class="section">
+      <section class="container">
         <div class="container">
           <h2 class="subtitle">Постоянные клиенты</h2>
           <ul class="client-list list">
@@ -440,7 +439,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="below">
+    <footer class="container">
       <div class="container footer-padding">
         <ul class="below-list list">
           <li>
