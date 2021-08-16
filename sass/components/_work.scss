@@ -18,6 +18,11 @@
 .work__item {
   position: relative;
 }
+.work__link {
+}
+.work__icon {
+  display: block;
+}
 .work__text {
   color: $primary-white;
   background-color: rgba(47, 48, 58, 0.8);

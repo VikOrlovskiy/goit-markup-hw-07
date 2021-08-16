@@ -149,8 +149,9 @@
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
-              <a href="#">
+              <a class="work__link" href="#">
                 <img
+                  class="work__icon"
                   src="./images/what-we-do-pic.1.jpg"
                   width="370"
                   alt="компьютер за которим работают"
@@ -159,8 +160,9 @@
               </a>
             </li>
             <li class="work__item">
-              <a href="#">
+              <a class="work__link" href="#">
                 <img
+                  class="work__icon"
                   src="./images/what-we-do-pic.2.jpg"
                   width="370"
                   alt="телефон на фоне компьютера"
@@ -169,8 +171,9 @@
               </a>
             </li>
             <li class="work__item">
-              <a href="#">
+              <a class="work__link" href="#">
                 <img
+                  class="work__icon"
                   src="./images/what-we-do-pic.3.jpg"
                   width="370"
                   alt="вибор цвета"
@@ -557,69 +560,69 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
-          <svg class="close_icon" width="18px" height="18px">
+          <svg class="close__icon" width="18px" height="18px">
             <use
               xlink:href="./images/svg/symbol-defs-good.svg#icon-close"
             ></use>
           </svg>
         </button>
-        <form class="form-order" action="js-speaker-form">
-          <b class="form-header">Оставьте свои данные, мы вам перезвоним</b>
+        <form class="form" action="js-speaker-form">
+          <b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
 
-          <label class="form-field">
-            <span class="form-field-text">Имя</span>
-            <div class="form-field-position">
-              <input class="form-input" type="text" name="user-name" />
-              <svg class="form-icon" width="18px" height="18px">
+          <label class="form__label">
+            <span class="form__text">Имя</span>
+            <div class="form__thumb">
+              <input class="form__input" type="text" name="user-name" />
+              <svg class="form__icon" width="18px" height="18px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-vector_1"
                 ></use>
               </svg>
             </div>
           </label>
-          <label class="form-field">
-            <span class="form-field-text">Телефон</span>
-            <div class="form-field-position">
-              <input class="form-input" type="tel" name="user-tel" />
-              <svg class="form-icon" width="18px" height="18px">
+          <label class="form__label">
+            <span class="form__text">Телефон</span>
+            <div class="form__thumb">
+              <input class="form__input" type="tel" name="user-tel" />
+              <svg class="form__icon" width="18px" height="18px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-vector_2"
                 ></use>
               </svg>
             </div>
           </label>
-          <label class="form-field">
-            <span class="form-field-text"> Почта</span>
-            <div class="form-field-position">
-              <input class="form-input" type="email" name="user-mail" />
-              <svg class="form-icon" width="18px" height="18px">
+          <label class="form__label">
+            <span class="form__text"> Почта</span>
+            <div class="form__thumb">
+              <input class="form__input" type="email" name="user-mail" />
+              <svg class="form__icon" width="18px" height="18px">
                 <use
                   xlink:href="./images/svg/symbol-defs-good.svg#icon-vector_3"
                 ></use>
               </svg>
             </div>
           </label>
-          <label class="form-field">
-            <span class="form-field-text">Комментарий</span>
+          <label class="form__label">
+            <span class="form__text">Комментарий</span>
             <textarea
-              class="form-text"
+              class="form__textarea"
               name="user-mail"
               rows="10"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <div class="form-field sheck_box_form">
-            <label class="sheck_box_label">
+          <div class="checkbox">
+            <label class="checkbox__label">
               <input
-                class="check_input"
+                class="checkbox__input"
                 type="checkbox"
                 name="privacy_policy"
               />
-              <span class="check_box"></span>
+              <span class="checkbox__icon"></span>
               Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
             </label>
           </div>
-          <button class="button-form" type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
