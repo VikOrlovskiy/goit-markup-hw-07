@@ -17,18 +17,14 @@
   font-size: 26px;
   line-height: 1.15;
   text-decoration: none;
-
-  display: flex;
-  justify-content: center;
 }
 .logo__color {
   color: $acent-color;
 }
-// .nav {
-// }
+.nav {
+}
 .nav__list {
-  margin: 0;
-  padding: 0;
+  @extend %zeroStiles;
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -51,12 +47,8 @@
   }
 }
 .info {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  list-style: none;
+  @extend %list;
+  @extend %centerFlex;
 }
 // .info__item {
 // }
@@ -67,9 +59,7 @@
   letter-spacing: 0.02em;
   text-decoration: none;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %centerFlex;
 
   transition: color 250ms $animation;
   &:hover,

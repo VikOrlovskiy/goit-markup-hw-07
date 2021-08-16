@@ -11,9 +11,9 @@
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @extend %zeroStiles;
 }
 .button {
   color: $primary-white;
@@ -22,10 +22,9 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
-  display: inline-block;
-  align-items: center;
   cursor: pointer;
+
+  @include centeredFlex($type: inline-block);
 
   box-shadow: $button-shadow-color;
   border-radius: 4px;
@@ -33,8 +32,7 @@
   min-width: 200px;
   border: 1px solid transparent;
 
-  transition: color 250ms var(--animation),
-    background-color 250ms var(--animation);
+  transition: color 250ms $animation, background-color 250ms $animation;
 
   &:hover,
   &:focus {
