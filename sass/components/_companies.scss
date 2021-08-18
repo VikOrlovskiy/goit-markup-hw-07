@@ -25,7 +25,7 @@
 
   @include centeredFlex($content: space-between);
 
-  transition: border 250ms $animation, color 250ms $animation;
+  transition: border-color 250ms $animation;
 
   &:focus,
   &:hover {
@@ -35,4 +35,5 @@
 }
 .companies__icon {
   fill: currentColor;
+  transition: fill 250ms $animation;
 }
