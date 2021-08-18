@@ -1,16 +1,29 @@
-.section__footer-color {
+.footer-color {
   background-color: $footer-bgc;
 }
 .footer__list {
+  padding: 60px 0;
   @extend %list;
-  @include centeredFlex($content: space-between);
+  display: flex;
+  align-items: flex-start;
+}
+.footer__item {
+  &:nth-child(2n) {
+    margin-left: 70px;
+  }
+  &:last-child {
+    margin-left: auto;
+  }
 }
 .address {
+  margin-top: 20px;
 }
 .address__list {
   @extend %list;
 }
+
 .address__item {
+  margin-top: 9px;
 }
 .address__location {
   color: $primary-white;
@@ -48,18 +61,24 @@
 .social {
 }
 .social__subscribe {
+  display: block;
   color: $primary-white;
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 }
+@import "./components_reuse/socialContact";
 .subscrabe {
-  @include centeredFlex($items: flex-end);
+  display: flex;
+  align-items: flex-end;
 }
-.subscrabe__container {
-}
+
+// .subscrabe__container {
+// }
 .subscrabe__label {
   color: $primary-white;
   font-weight: 700;
@@ -75,6 +94,9 @@
   line-height: 1.87;
   cursor: pointer;
   letter-spacing: 0.06em;
+  min-width: 358px;
+
+  margin-top: 20px;
 
   @include centeredFlex();
 
@@ -100,10 +122,13 @@
   cursor: pointer;
 
   @include centeredFlex();
+  justify-content: flex-end;
 
   box-shadow: $button-shadow-color;
   border-radius: 4px;
   padding: 10px 32px;
+  margin-left: 12px;
+  max-height: 54px;
   min-width: 200px;
   border: 1px solid transparent;
 

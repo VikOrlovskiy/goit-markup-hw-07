@@ -1,9 +1,18 @@
-.features {
+.section--color {
+  background-color: $secondary-bgc;
 }
+// .features {
+// }
 .features__list {
+  @extend %list;
   display: flex;
-  flex-basis: calc(100% / 4);
-  @extend %zeroStiles;
+  flex-basis: calc(100% / 4 -90px);
+}
+.features__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .features__thumb {
   @include centeredFlex();
@@ -11,16 +20,23 @@
   width: 270px;
   background-color: $button-bgc;
   border-radius: 4px;
+
+  margin-bottom: 30px;
 }
-.features__icon {
-}
+// .features__icon {
+// }
 .features__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   @extend %zeroStiles;
+
+  margin-bottom: 10px;
 }
 .features__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
   @extend %zeroStiles;
 }

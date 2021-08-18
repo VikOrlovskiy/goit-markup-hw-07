@@ -1,23 +1,25 @@
-.companies {
-}
+// .companies {
+// }
 .companies__title {
   color: $title-color;
   line-height: 1.16;
   font-size: 36px;
   font-weight: 700;
   text-align: center;
+
+  margin-bottom: 50px;
   @extend %zeroStiles;
 }
 .companies__list {
   @include centeredFlex($content: space-between);
   @extend %list;
 }
-.companies__item {
-}
+// .companies__item {
+// }
 .companies__link {
-  color: $primary-text-color;
+  color: $icon-social-color;
   border-radius: 4px;
-  border: 1px solid $primary-text-color;
+  border: 1px solid $icon-social-color;
   text-decoration: none;
   padding: 16px 32px;
 

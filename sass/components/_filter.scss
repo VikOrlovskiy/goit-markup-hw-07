@@ -1,10 +1,19 @@
-.filter {
+// .filter {
+
+// }
+.container-margin {
+  margin-bottom: 50px;
 }
+
 .filter__list {
   @extend %list;
   @include centeredFlex();
 }
 .filter__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 .filter__button {
   color: $title-color;

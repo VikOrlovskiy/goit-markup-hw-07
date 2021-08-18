@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/portfolio.css" />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -20,11 +20,13 @@
         <a class="logo" href="#"><span class="logo__color">Web</span>Studio</a>
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item nav__item-active">
+            <li class="nav__item">
               <a class="nav__link" href="index.html">Студия</a>
             </li>
-            <li class="nav__item">
-              <a class="nav__link" href="portfolio.html">Портфолио</a>
+            <li class="nav__item nav__item-active">
+              <a class="nav__link nav__link-active" href="portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="nav__item">
               <a class="nav__link" href="#">Контакты</a>
@@ -59,7 +61,7 @@
       <!-- portfolio -->
       <section class="section">
         <!-- фильтр -->
-        <div class="container">
+        <div class="container container-margin">
           <div class="filter">
             <h1 class="is-hidden">portfolio</h1>
             <ul class="filter__list">
@@ -270,7 +272,7 @@
             </li>
             <li class="grid__item">
               <article class="product">
-                <a class="product__ink" href="#">
+                <a class="product__link" href="#">
                   <div class="product__thumb">
                     <img
                       class="product__icon"
@@ -325,7 +327,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="section section__footer-color">
+    <footer class="footer footer-color">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
@@ -360,7 +362,7 @@
               <b class="social__subscribe">присоединяйтесь</b>
               <ul class="social__list">
                 <li class="social__item">
-                  <a class="social__link" href="#">
+                  <a class="social__link social__link-footer" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-instagram-2"
@@ -369,7 +371,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="#">
+                  <a class="social__link social__link-footer" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-twitter-1"
@@ -378,7 +380,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="#">
+                  <a class="social__link social__link-footer" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-facebook-1"
@@ -387,7 +389,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link" href="#">
+                  <a class="social__link social__link-footer" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-linkedin-1"
