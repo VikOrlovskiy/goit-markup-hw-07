@@ -13,40 +13,15 @@
     url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-}
-.hero__title {
-  color: $primary-white;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  @extend %zeroStiles;
 
-  margin-bottom: 30px;
-}
-.button {
-  color: $primary-white;
-  background-color: $acent-color;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
+  &__title {
+    color: $primary-white;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-  @include centeredFlex($type: inline-block);
-
-  box-shadow: $button-shadow-color;
-  border-radius: 4px;
-  padding: 10px 32px;
-  min-width: 200px;
-  border: 1px solid transparent;
-
-  transition: color 250ms $animation, background-color 250ms $animation;
-
-  &:hover,
-  &:focus {
-    color: $acent-color;
-    background-color: $primary-white;
+    margin-bottom: 30px;
   }
 }

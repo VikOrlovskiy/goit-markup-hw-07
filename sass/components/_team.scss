@@ -1,26 +1,11 @@
-// .team {
-// }
-.team__title {
-  color: $title-color;
-  line-height: 1.16;
-  font-size: 36px;
-  font-weight: 700;
-  text-align: center;
-
-  margin-bottom: 50px;
-  @extend %list;
-}
-.team__list {
-  @include centeredFlex($content: space-between);
-  @extend %list;
+.team {
+  @include centered($content: space-between);
   flex-basis: calc(100% / 4);
-}
-.team__item {
-  background-color: $primary-white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0 0 4px 4px;
-}
 
-@import "./components_reuse/specialist";
-@import "./components_reuse/socialContact";
+  &__item {
+    background-color: $primary-white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px;
+  }
+}

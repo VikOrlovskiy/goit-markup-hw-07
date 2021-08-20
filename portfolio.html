@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- header -->
@@ -61,32 +61,38 @@
       <!-- portfolio -->
       <section class="section">
         <!-- фильтр -->
-        <div class="container container-margin">
-          <div class="filter">
+        <div class="container">
+          <div class="filter filter-margin">
             <h1 class="is-hidden">portfolio</h1>
             <ul class="filter__list">
               <li class="filter__item">
-                <button class="filter__button" type="button">Все</button>
+                <button class="secondary__button" type="button">Все</button>
               </li>
               <li class="filter__item">
-                <button class="filter__button" type="button">Веб-сайты</button>
+                <button class="secondary__button" type="button">
+                  Веб-сайты
+                </button>
               </li>
               <li class="filter__item">
-                <button class="filter__button" type="button">Приложения</button>
+                <button class="secondary__button" type="button">
+                  Приложения
+                </button>
               </li>
               <li class="filter__item">
-                <button class="filter__button" type="button">Дизайн</button>
+                <button class="secondary__button" type="button">Дизайн</button>
               </li>
               <li class="filter__item">
-                <button class="filter__button" type="button">Маркетинг</button>
+                <button class="secondary__button" type="button">
+                  Маркетинг
+                </button>
               </li>
             </ul>
           </div>
         </div>
         <!-- проекти -->
         <div class="container">
-          <ul class="grid">
-            <li class="grid__item">
+          <ul class="portfolio">
+            <li class="portfolio__item">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -112,7 +118,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -140,7 +146,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -166,7 +172,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -192,7 +198,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -218,7 +224,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -244,7 +250,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -270,7 +276,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -296,7 +302,7 @@
                 </a>
               </article>
             </li>
-            <li class="grid__item">
+            <li class="portfolio__item"">
               <article class="product">
                 <a class="product__link" href="#">
                   <div class="product__thumb">
@@ -327,7 +333,7 @@
       </section>
     </main>
     <!-- footer -->
-    <footer class="footer footer-color">
+    <footer class="footer footer-background">
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
@@ -358,11 +364,11 @@
             </div>
           </li>
           <li class="footer__item">
-            <div class="social">
-              <b class="social__subscribe">присоединяйтесь</b>
-              <ul class="social__list">
+            <div class="contacts">
+              <b class="contacts__subscribe">присоединяйтесь</b>
+              <ul class="social">
                 <li class="social__item">
-                  <a class="social__link social__link-footer" href="#">
+                  <a class="social__link social__link-background" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-instagram-2"
@@ -371,7 +377,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link-footer" href="#">
+                  <a class="social__link social__link-background" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-twitter-1"
@@ -380,7 +386,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link-footer" href="#">
+                  <a class="social__link social__link-background" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-facebook-1"
@@ -389,7 +395,7 @@
                   </a>
                 </li>
                 <li class="social__item">
-                  <a class="social__link social__link-footer" href="#">
+                  <a class="social__link social__link-background" href="#">
                     <svg class="social__icon" width="20px" height="20px">
                       <use
                         xlink:href="./images/svg/symbol-defs-good.svg#icon-linkedin-1"
@@ -413,9 +419,9 @@
                   />
                 </label>
               </div>
-              <button type="submit" class="subscrabe__button">
+              <button type="submit" class="primary__button">
                 Подписаться
-                <svg class="subscrabe__icon" width="24px" height="24px">
+                <svg class="primary__button--icon" width="24px" height="24px">
                   <use
                     xlink:href="./images/svg/symbol-defs-good.svg#icon-send"
                   ></use>
