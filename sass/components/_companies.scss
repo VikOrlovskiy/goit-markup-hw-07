@@ -7,7 +7,9 @@
     border: 1px solid $icon-social-color;
     text-decoration: none;
     padding: 16px 32px;
-    transition: border-color 250ms $animation;
+
+    transition: border-color 250ms $animation, color 250ms $animation;
+
     @include centered($content: space-between);
 
     &:focus,
