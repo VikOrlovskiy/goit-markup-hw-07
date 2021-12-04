@@ -1,17 +1,17 @@
 // general
-@import "./utils/variables";
-@import "./utils/placeholders";
-@import "./utils/mixins";
-@import "./base/normalize";
-@import "./components/general-styles";
+@import "utils/variables";
+@import "utils/placeholders";
+@import "utils/mixins";
+@import "base/normalize";
+@import "components/general-styles";
 // main
 // header
-@import "./components/page-header";
-@import "./components/logo";
-@import "./components/navigation";
-@import "./components/site-contact";
+@import "components/page-header";
+@import "components/logo";
+@import "components/navigation";
+@import "components/site-contact";
 // hero 2
-@import "./components/hero-page";
+@import "components/hero-page";
 @import "./components/_buttons";
 // section
 @import "./components/features";
